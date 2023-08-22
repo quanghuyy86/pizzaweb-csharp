@@ -1,0 +1,88 @@
+﻿@model List<pizzaweb.Models.Tables.TblProduct>
+@{
+    ViewData["Title"] = "Home Pizza";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+
+}
+
+<div class="slider">
+    <img src="../image/banner/banner1.png" width="100%" />
+</div>
+<div class="container products">
+    <h1>Thực đơn</h1>
+    <ul class="menu">
+        <li>
+            <a  href="pizza">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <p>Pizza</p>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="Bbq">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p>Sườn BBG</p>
+            </a>
+        </li>
+        <li>
+            <a href="spaghetti">
+                <i class="fa-solid fa-bowl-rice"></i>
+                <p>Mì ý</p>
+            </a>
+        </li>
+        <li>
+            <a href="Salad">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Salad</p>
+            </a>
+        </li>
+        <li>
+            <a href="drinks">
+                <i class="fa-solid fa-martini-glass"></i>
+                <p>Đồ Uống</p>
+            </a>
+        </li>
+        <li>
+            <a href="combo">
+                <i class="fa-solid fa-futbol"></i>
+                <p>Combo</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="container list_products">
+    @foreach (var item in Model)
+    {
+        <div class="product">
+            <div class="info">
+                <a href="">
+                    <img src="@item.Avatar" width="100%" />
+                </a>
+                <div class="desc_product">
+                    <h2 class="name_product">@item.Title</h2>
+                    <div class="price">@item.Price.ToString("#,# đ")</div>
+                    <div class="option">
+                        <div class="amount">
+                            <label>Số lượng</label>
+                            <select>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="Purchase">
+                    <button type="submit">Mua hàng</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

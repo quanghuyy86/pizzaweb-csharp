@@ -1,0 +1,58 @@
+﻿@model pizzaweb.Models.Tables.TblProduct
+
+@{
+    ViewData["Title"] = "EditProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+}
+
+<div class="register container">
+    <fieldset>
+        <legend>
+            Edit product
+        </legend>
+        <form asp-action="EditProduct" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control">
+                    @foreach (var loai in db.TblCategories.ToList())
+                    {
+                        <option value="@loai.Id">@loai.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriceSale" class="control-label"></label>
+                <input asp-for="PriceSale" class="form-control" />
+                <span asp-validation-for="PriceSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DetailDescription" class="control-label">Detail Description</label>
+                <textarea asp-for="DetailDescription" class="summernote" autocomplete="off" id="summernote" rows="5" cols="145"></textarea>
+                <span asp-validation-for="DetailDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label"></label>
+                <input type="file" name="Avatar" />
+            </div>
+            <div class="form-group div-btn">
+                <button type="submit" value="Edit" class="btn-register" >Edit</button>
+                <a href="ListProducts" class="btn btn-secondary" style="float: right;">List Product</a>
+            </div>
+        </form>
+    </fieldset>
+</div>
+
+

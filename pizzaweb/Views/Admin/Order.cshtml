@@ -1,0 +1,74 @@
+﻿@model IEnumerable<pizzaweb.Models.Tables.TblOrder>
+
+@{
+    ViewData["Title"] = "Order";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+}
+
+<h1>Thông tin đơn hàng</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên khách hàng
+            </th>
+            <th>
+                Điện thoại
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Thời gian đặt hàng
+            </th>
+            <th>
+                Số tiền
+            </th>        
+            <th>
+                Phương thức thanh toán
+            </th>
+            <th>
+                Chi tiết
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CutomerEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                    @item.TotalPrice?.ToString("#,# đ")
+            </td>
+          
+                @{
+                  var loai = db.TblPaymentOders.Find(item.Payment);
+  
+                   <td>@loai.Name</td>
+                }
+        
+            <td>
+                <a asp-action="OrderDetails" asp-route-id="@item.Id">Xem chi tiết</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

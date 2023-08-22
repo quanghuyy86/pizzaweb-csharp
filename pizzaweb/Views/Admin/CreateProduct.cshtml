@@ -1,0 +1,60 @@
+﻿@model pizzaweb.Models.Tables.TblProduct
+
+@{
+    ViewData["Title"] = "CreatProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+}
+<div class="register container">
+<fieldset>
+    <legend>
+            Add new products
+    </legend>
+
+        <form asp-action="CreateProduct"  enctype="multipart/form-data" method="post" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control">
+                    <option value="0">---</option>
+                    @foreach (var loai in db.TblCategories.ToList())
+                    {
+                                   <option value="@loai.Id">@loai.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriceSale" class="control-label">Price Sale</label>
+                <input asp-for="PriceSale" class="form-control" />
+                <span asp-validation-for="PriceSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DetailDescription" class="control-label">Detail Description</label>
+                <textarea asp-for="DetailDescription" class="summernote" autocomplete="off" id="summernote" rows="5" cols="145"></textarea>
+                <span asp-validation-for="DetailDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label"></label>
+                <input type="file" name="Avatar" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+</fieldset>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-action="ListProducts">Back to List</a>
+</div>
+

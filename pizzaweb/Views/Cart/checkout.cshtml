@@ -1,0 +1,78 @@
+﻿@model pizzaweb.Models.Tables.TblOrder
+
+
+@{
+    ViewData["Title"] = "checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+}
+
+<div class="banner_title">
+    <h1>Thanh toán</h1>
+    <div class="breadcrum">
+        <a href="#">Trang chủ</a> / <a href="#">Giỏ hàng</a> / Thanh toán
+    </div>
+    <div class="breadcrum">
+        <p>Bạn hãy kiểm tra thông tin của mình thật chính xác</p>
+    </div>
+</div>
+
+<div class="main-pay">
+    <div class="info-pay">
+        <form asp-action="checkout" method="post">
+            <h2 style="font-size: 32px;">Thông tin khách hàng</h2>
+            <div class="btn-pay">
+                <span>Họ tên khách hàng</span>
+                <br>
+                <input asp-for="CustomerName" type="text" placeholder="Nhập họ và tên">
+                <br>
+            </div>
+            <div class="btn-pay">
+                <span>Số điện thoại</span>
+                <br>
+                <input asp-for="CustomerPhone" type="text" placeholder="Nhập số điện thoại">
+                <br>
+            </div>
+            <div class="btn-pay">
+                <span>Địa chỉ</span>
+                <br>
+                <input asp-for="CustomerAddress" type="text" placeholder="Nhập địa chỉ">
+                <br>
+            </div>
+            <div class="btn-pay">
+                <span>Email</span>
+                <br>
+                <input asp-for="CutomerEmail" type="email" placeholder="Nhập email">
+                <br>
+            </div>
+            <div>
+                <span>Phương thức thanh toán</span>
+                <br>
+                <select asp-for="Payment">
+                    <option value="0">---</option>
+                    @foreach (var loai in db.TblPaymentOders.ToList())
+                    {
+                        <option value="@loai.Id">@loai.Name</option>
+                    }
+                </select>
+                <br>
+            </div>
+            <div class="btn-pay">
+                <button type="submit" class="btn btn-primary">Đặt hàng</button>
+            </div>
+        </form>
+        @*<form action="CreatePaymentmomo">
+            <input type="hidden" value="@Model"/>
+            <div class="btn-pay">
+                <button  type="submit" class="btn btn-primary">Thanh toán</button>
+            </div>
+        </form>*@
+            
+    </div>
+    <div class="cart-pay">
+        @{
+            @Html.ActionLink("Xem Giỏ hàng", "ThongTinGioHang", "Cart")
+        }
+    </div>
+</div>
+

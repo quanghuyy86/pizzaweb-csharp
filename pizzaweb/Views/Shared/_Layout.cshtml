@@ -1,0 +1,942 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pizza Express Pizza</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+   <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+            ul li {
+                margin: 0;
+                padding: 0;
+            }
+
+        ol {
+            list-style-type: none;
+            margin: 0;
+        }
+
+            ol li {
+                margin: 0;
+                padding: 0;
+            }
+
+        header {
+            background-color: #a9001b;
+            /* align-items: center; */
+        }
+
+        .container_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .container_header .header_left {
+                display: flex;
+            }
+
+                .container_header .header_left img {
+                    width: max-content;
+                    height: max-content;
+                    padding: 10px 0;
+                    margin: 0;
+                }
+
+                .container_header .header_left p {
+                    color: #ffffff;
+                    font-size: 15px;
+                    margin-left: 30px;
+                    line-height: 30px;
+                }
+
+            .container_header .header_right {
+                justify-content: flex-end;
+                display: flex;
+            }
+
+                .container_header .header_right .register_login {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 20px;
+                    color: #e2e2e2;
+                }
+
+                    .container_header .header_right .register_login a {
+                        color: #e2e2e2;
+                    }
+
+                .container_header .header_right > a {
+                    display: flex;
+                    color: #ffffff;
+                    font-size: 15px;
+                    background-color: #850015;
+                    padding: 10px 10px;
+                }
+
+                .container_header .header_right a i {
+                    font-size: 25px;
+                }
+
+        nav {
+            background-color: #c00a27;
+            position: sticky;
+            top: 0;
+            /* justify-content: center; */
+        }
+
+        .menu_main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .menu_main li {
+                position: relative;
+            }
+
+        .sub_menu {
+            position: absolute;
+            top: 78px;
+            left: -2px;
+            background-color: red;
+            width: 150px;
+            box-shadow: 0 0 5px #828282;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            color: #f5f5f5;
+        }
+
+            .sub_menu ul {
+                padding-left: 0;
+            }
+
+                .sub_menu ul li a {
+                    padding: 10px 10px;
+                    font-size: 15px;
+                }
+
+        .menu_main > li:hover div.sub_menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu_main li a {
+            display: block;
+            padding: 30px 25px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #ffffff;
+            border-right: 1px solid #a9001b;
+        }
+
+            .menu_main li a:hover {
+                color: #faf901;
+            }
+
+        .menu_main li .active {
+            color: #faf901;
+        }
+
+        .menu_main li:last-child {
+            display: flex;
+        }
+
+            .menu_main li:last-child a {
+                border: 0
+            }
+
+            .menu_main li:last-child ol {
+                padding: 15px 50px;
+            }
+
+                .menu_main li:last-child ol li:first-child {
+                    font-size: 14px;
+                    color: #ffffff;
+                    padding-bottom: 5px;
+                }
+
+                .menu_main li:last-child ol li:last-child {
+                    font-size: 20px;
+                    color: #faf901;
+                    font-weight: bold;
+                    padding-top: 5px;
+                }
+
+        main .products {
+            padding: 30px 0;
+        }
+
+            main .products h1 {
+                text-align: center;
+                font-size: 25px;
+                text-transform: uppercase;
+            }
+
+            main .products .menu {
+                display: flex;
+                justify-content: center;
+            }
+
+                main .products .menu li {
+                    padding: 10px 30px;
+                }
+
+                    main .products .menu li a {
+                        display: flex;
+                        font-size: 21px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        flex-wrap: nowrap;
+                        color: #ff9c00;
+                        box-sizing: border-box;
+                    }
+
+                        main .products .menu li a p {
+                            margin: 0;
+                            padding-top: 5px;
+                        }
+
+                        main .products .menu li a i {
+                            font-size: 30px;
+                            margin-right: 10px;
+                        }
+
+                    main .products .menu li .active {
+                        color: #cd3b53;
+                    }
+
+                    main .products .menu li a:hover {
+                        color: #cd3b53;
+                    }
+
+        .list_products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .list_products .product {
+                box-sizing: border-box;
+                width: calc(100% / 4);
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+
+                .list_products .product .info {
+                    border: 1px solid #e2e2e2;
+                }
+
+                    .list_products .product .info .desc_product .name_product {
+                        font-size: 18px;
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                    }
+
+                    .list_products .product .info .desc_product .price {
+                        font-size: 18px;
+                        text-align: center;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        padding: 0;
+                        color: #c00a27;
+                    }
+
+                    .list_products .product .info .desc_product .option {
+                        display: flex;
+                        font-size: 13px;
+                        justify-content: center;
+                        border-radius: 40%;
+                        background-color: #f5f5f5;
+                        margin: 0 20px;
+                        margin-bottom: 10px;
+                    }
+
+                        .list_products .product .info .desc_product .option .size {
+                            padding: 5px 10px;
+                        }
+
+                            .list_products .product .info .desc_product .option .size select {
+                                border: 0;
+                            }
+
+                        .list_products .product .info .desc_product .option .amount {
+                            padding: 5px 10px;
+                        }
+
+                            .list_products .product .info .desc_product .option .amount select {
+                                border: 0;
+                            }
+
+                    .list_products .product .info .Purchase {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                        .list_products .product .info .Purchase button {
+                            border: 0;
+                            background-color: #b9b9b9;
+                            border-radius: 15%;
+                            padding: 5px 20px;
+                            font-size: 13px;
+                            color: #f5f5f5;
+                        }
+
+                            .list_products .product .info .Purchase button:hover {
+                                background-color: #a9001b;
+                                color: #e2e2e2;
+                            }
+
+        .footer_bottom {
+            background-color: #282828;
+        }
+
+        .information {
+            text-align: center;
+        }
+
+            .information .logo {
+                padding-top: 50px;
+            }
+
+            .information h1 {
+                color: #fff00d;
+                text-transform: uppercase;
+                font-size: 20px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+
+            .information p {
+                color: #e2e2e2;
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .information hr {
+                width: 20%;
+            }
+
+        .location {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+            .location .information {
+                padding: 0 25px;
+            }
+
+                .location .information p {
+                    font-size: 17px;
+                }
+
+                .location .information a {
+                    color: #fff000;
+                }
+
+        .footer_bottom .container .information p {
+            font-size: 13px;
+        }
+
+        .banner_title {
+            background-color: #282828;
+            height: 200px;
+            text-align: center;
+        }
+
+            .banner_title h1 {
+                margin-top: 0;
+                padding-top: 40px;
+                color: #faf901;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 40px;
+            }
+
+            .banner_title .breadcrum {
+                color: #f5f5f5;
+                font-size: 18px;
+            }
+
+                .banner_title .breadcrum a {
+                    color: #f5f5f5;
+                }
+
+        .promotion {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+            .promotion a {
+                box-sizing: border-box;
+                width: calc(100% / 2);
+                padding: 10px 10px;
+            }
+
+        .container_login {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+        }
+
+        .login {
+            width: 50%;
+            margin-right: 20px;
+        }
+
+            .login label {
+                font-weight: bold;
+            }
+
+        .forgot_password {
+            width: 50%;
+        }
+
+        .login fieldset {
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc;
+            border: 1px solid #ccc;
+        }
+
+        legend {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        form {
+            padding: 15px;
+        }
+
+        .form-group {
+            margin-top: 15px;
+        }
+
+            .form-group > input {
+                width: 100%;
+                box-sizing: border-box;
+                height: 30px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+                .form-group > input:focus {
+                    outline: unset;
+                }
+
+            .form-group > textarea {
+                display: block;
+            }
+
+        .div-btn {
+            text-align: center;
+        }
+
+            .div-btn button {
+                color: #f5f5f5;
+                background-color: red;
+                padding: 10px;
+                border: none;
+                margin-right: 15px;
+            }
+
+            .div-btn a {
+                color: black;
+            }
+
+        .forgot_password {
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+
+            .forgot_password label {
+                margin-top: 5px;
+                font-weight: bold;
+            }
+
+            .forgot_password input {
+                width: 100%;
+                box-sizing: border-box;
+                height: 30px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .forgot_password button {
+                color: #f5f5f5;
+                background-color: red;
+                padding: 10px;
+                border: none;
+                margin-right: 15px;
+                margin-top: 20px;
+            }
+
+        .register fieldset {
+            margin: 40px 200px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc;
+            border: 1px solid #ccc;
+        }
+
+        .other {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+            .other a {
+                color: black;
+            }
+
+        .register form div p {
+            display: none;
+            color: red;
+            margin-top: 3px;
+        }
+
+        .login fieldset form p {
+            display: none;
+            color: red;
+            margin-top: 3px;
+        }
+
+        .list_product {
+            padding: 15px;
+        }
+
+        .row {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+            .row .product_info {
+                width: 60%;
+                display: flex;
+            }
+
+                .row .product_info > a {
+                    display: block;
+                    width: 120px;
+                    margin-right: 15px;
+                    border: 1px solid #f2f2f2;
+                }
+
+                .row .product_info .desc h2 {
+                    margin: 0 0 5px;
+                }
+
+                    .row .product_info .desc h2 a {
+                        color: #282828;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
+
+                .row .product_info .desc > div {
+                    font-size: 15px;
+                    margin-bottom: 3px;
+                }
+
+                    .row .product_info .desc > div.price {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: chocolate;
+                        margin-top: 10px;
+                    }
+
+            .row .action {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+
+                .row .action .total_1_sp {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: chocolate;
+                }
+
+        .total_price {
+            padding: 15px;
+            font-size: 23px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        #total_price {
+            color: chocolate;
+        }
+
+        .row .customer_information {
+            display: block;
+            float: left;
+            margin-left: 10%;
+            font-size: 18px;
+        }
+
+        .row .pay {
+            float: right;
+            margin-left: 33%;
+        }
+
+            .row .pay button {
+                padding: 10px;
+                background-color: red;
+                color: #f2f2f2;
+            }
+
+        .main-pay {
+            display: flex;
+            margin-top: 40px;
+        }
+
+            .main-pay .info-pay {
+                margin: 0px 180px 180px 180px;
+            }
+
+                .main-pay .info-pay input {
+                    padding: 10px 200px 0 0;
+                    text-align: justify;
+                }
+
+                .main-pay .info-pay span {
+                    font-size: 20px;
+                }
+
+                .main-pay .info-pay .btn-pay {
+                    padding-bottom: 24px;
+                }
+
+            .main-pay .cart-pay {
+            }
+
+        .cartsuccesscard h1 {
+            color: #88B04B;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .cartsuccesscard p {
+            color: #404F5E;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .cartsuccesscard i {
+            color: #9ABC66;
+            font-size: 100px;
+            line-height: 200px;
+            margin-left: -15px;
+        }
+
+        .cartsuccesscard {
+            background: #ddd;
+            padding: 60px;
+            border-radius: 4px;
+            box-shadow: 0 2px 3px #C8D0D8;
+            display: inline-block;
+            margin: 0 auto;
+        }
+   </style>
+    
+</head>
+<body>
+    <header>
+        <div class="container container_header">
+            <div class="header_left">
+                <img src="../image/logo.png" />
+                <p>Pizza ngon - Giá rẻ - Vận chuyển tận nhà</p>
+            </div>
+            <div class="header_right">
+                <a href="/cart/index">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <ul>
+                        <li>Giỏ hàng</li>
+                    </ul>
+                </a>
+                <div class="register_login">
+                    @{
+                        var customer = Context.Session.GetString("FullName");
+                        var user = Context.Session.GetString("user");
+
+                        
+                    }
+                    @if (customer != null)
+                    {
+                        <span>@customer</span>
+                        <span>/</span>
+                        <span><a href="/home/logout"> Đăng xuất</a></span>
+
+                    }
+                    else if(user != null)
+                    {
+                        <span>@user</span>
+                        <span>/</span>
+                        <span><a href="/admin/listproducts">Admin</a>/</span>
+                        <span><a href="/home/logout"> Đăng xuất</a></span>
+                    }
+                    else
+                    {
+                        <span><a href="/home/login">Đăng nhập</a>/<a href="/home/register">Đăng ký</a></span>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="menu_main">
+                <li>
+                    <a class="active" href="/home/pizza">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="">Thực đơn</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li>
+                                <a href="/home/pizza">Pizza</a>
+                            </li>
+                            <li>
+                                <a href="/home/Bbq">Sườn BBQ</a>
+                            </li>
+                            <li>
+                                <a href="/home/spaghetti">Mỳ ý</a>
+                            </li>
+                            <li>
+                                <a href="/home/Salad">Salad</a>
+                            </li>
+                            <li>
+                                <a href="/home/drink">Đồ uống</a>
+                            </li>
+                            <li>
+                                <a href="#">Combo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Khuyến mại</a>
+                </li>
+                <li>
+                    <a href="#">Chính sách</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="/home/contact">Liên hệ</a>
+                    <ol>
+                        <li>Gọi điện ngay - Ship liền tay (24/7)</li>
+                        <li><i class="fa-solid fa-phone"></i>  (024) 36.888.777</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        @RenderBody();
+    </main>
+    <footer>
+        <div class="footer_top">
+            <img src="../image/footer_top/images/footer_top.png" width="100%" />
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="information">
+                    <div class="logo">
+                        <img src="../image/logo.png" />
+                    </div>
+                    <h1>CÔNG TY TNHH PIZZA EXPRESS VIỆT NAM</h1>
+                    <p>
+                        Để đặt bánh pizza, vui lòng liên hệ tổng đài số: (024) 36.888.777 <br>
+
+                        Để phản ánh chất lượng dịch vụ, vui lòng gọi số: 0989.139.565 <br>
+
+                        Email: lienhepizzaexpress@gmail.com <br>
+
+                        Chính sách bảo mật thông tin cá nhân <br>
+
+                        Chính sách đổi/trả sản phẩm và hoàn tiền <br>
+
+                        Chính sách thanh toán <br>
+                    </p>
+                    <hr>
+                </div>
+                <div class="location">
+                    <div class="information">
+                        <img src="../image/footer_bottom/icon_1.png" />
+                        <p>107 D3 Ngọc Khánh, Ba Đình</p>
+                        <a href=""><i class="fa-solid fa-location-arrow"></i>Xem trên bản đồ</a>
+                    </div>
+                    <div class="information">
+                        <img src="../image/footer_bottom/icon_2.png" />
+                        <p>14 Ngõ 497 Nguyễn Trãi, Thanh Xuân</p>
+                        <a href=""><i class="fa-solid fa-location-arrow"></i>Xem trên bản đồ</a>
+                    </div>
+                    <div class="information">
+                        <img src="../image/footer_bottom/icon_3.png" />
+                        <p>6 Đồng Bát, Cầu Giấy</p>
+                        <a href=""><i class="fa-solid fa-location-arrow"></i>Xem trên bản đồ</a>
+                    </div>
+                    <div class="information">
+                        <img src="../image/footer_bottom/icon_4.png" />
+                        <p>52 Kim Đồng, Hoàng Mai</p>
+                        <a href=""><i class="fa-solid fa-location-arrow"></i>Xem trên bản đồ</a>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="notification">
+                        <img src="../image/footer_bottom/icon_5.png">
+                        <p>
+                            Công ty TNHH Pizza Express Việt Nam Số ĐKKD: 0106675108 <br>
+                            Địa Chỉ: Số 352 Đường Bưởi, P.Vĩnh Phúc, Q.Ba Đình, TP.Hà Nội <br>
+                            Số điện thoại: 02436888777 <br>
+                            Email: lienhepizzaexpress@gmail.com
+                        </p> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            ShowCount();
+            $('body').on('click', '.btnAddToCart', function (e) {
+                e.preventDefault();
+                var id = $(this).data('id');
+                var quatity = 1;   
+                var tQuantity = $('#quantity_value').text();
+                if(tQuantity != ''){
+                    quatity = parseInt(tQuantity);
+                }
+
+                var request = $.ajax({
+                    url: '/Cart/AddToCart',
+                    type: 'POST',
+                    data: { id: id, quantity: quatity },
+
+                });
+                request.done(function (rs) {
+                    if (rs.succsess) {
+                        $('#checkout_items').html(rs.Count);
+                        alert(rs.msg);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            ShowCount();
+            $('body').on('click', '.btnDelete', function (e) {
+                e.preventDefault();
+                var id = $(this).data('id');
+                
+                var request = $.ajax({
+                    url: '/Cart/Delete',
+                    type: 'POST',
+                    data: { id: id},
+
+                });
+                request.done(function (rs) {
+                    if (rs.succsess) {
+                        $('#checkout_items').html(rs.Count);
+                        $('#trow_' + id).remove();
+                        LoadCart();
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        function LoadCart() {
+            var request = $.ajax({
+                url: '/Cart/AddToCart',
+                type: 'Get',
+
+            });
+            request.done(function (rs) {
+                $('#load-data').html(rs);
+            });
+        }
+    </script>
+    <script>
+        function ShowCount(){
+            var request = $.ajax({
+                url: '/Cart/ShowCount',
+                type: 'Get',
+
+            });
+            request.done(function (rs) {
+                 $('#checkout_items').html(rs.Count); 
+            }); 
+        }
+    </script>
+    <script>
+        function validateObj(object) {
+            var name = object.getAttribute('name');
+            var obj_error = document.getElementById('error_' + name);
+            var val = object.value;
+            var field_name = object.getAttribute('field-name');
+            if (val == '') {
+                obj_error.innerHTML = "Vui lòng nhập " + field_name;
+                obj_error.style.display = 'block';
+            } else {
+                obj_error.innerHTML = "";
+                obj_error.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        function dangKytaiKhoan() {
+            var obj_fullname = document.getElementById('input_fullname');
+            validateObj(obj_fullname);
+            var obj_email = document.getElementById('input_email');
+            validateObj(obj_email);
+            var obj_password = document.getElementById('input_password')
+            validateObj(obj_password);
+            var obj_fullname_confirm = document.getElementById('input_password_confirm');
+            validateObj(obj_fullname_confirm);
+        }
+    </script>
+    
+</body>
+</html>

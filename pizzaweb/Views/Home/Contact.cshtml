@@ -1,0 +1,49 @@
+﻿@model pizzaweb.Models.Tables.TblContact
+
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner_title">
+    <h1>Liên hệ với chúng tôi</h1>
+    <div class="breadcrum">
+        <a href="pizza">Trang chủ</a> / Liên hệ với chúng tôi
+    </div>
+</div>
+<hr />
+<div class="register container">
+    <fieldset>
+    <legend>
+        Contact us
+    </legend>
+        <form asp-action="Contact" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label">Họ tên</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label">Số điện thoại</label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label">Chú thích</label>
+                <textarea name="message" id="idmessage" cols="70" rows="10" style="width: 737px; height: 171px;"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group div-btn">
+                <button type="submit" class="btn btn-register">Submit</button>
+            </div>
+        </form>
+    </fieldset>
+</div>
+
+

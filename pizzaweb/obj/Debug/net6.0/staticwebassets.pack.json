@@ -1,0 +1,577 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\pizzaweb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\pizzaweb.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\banner\\banner1.png",
+      "PackagePath": "staticwebassets\\image\\banner\\banner1.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\banner\\banner2.png",
+      "PackagePath": "staticwebassets\\image\\banner\\banner2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\banner\\banner3.png",
+      "PackagePath": "staticwebassets\\image\\banner\\banner3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\banner\\bg_title.png",
+      "PackagePath": "staticwebassets\\image\\banner\\bg_title.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\footer_bg.jpg",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\footer_bg.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\icon_1.png",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\icon_1.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\icon_2.png",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\icon_2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\icon_3.png",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\icon_3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\icon_4.png",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\icon_4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_bottom\\icon_5.png",
+      "PackagePath": "staticwebassets\\image\\footer_bottom\\icon_5.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\Untitled-1.psd",
+      "PackagePath": "staticwebassets\\image\\footer_top\\Untitled-1.psd"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\icon_1png.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\icon_1png.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\icon_2.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\icon_2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\icon_3.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\icon_3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\icon_4.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\icon_4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\images\\footer_top.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\images\\footer_top.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\images\\footer_top_01.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\images\\footer_top_01.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\footer_top\\images\\footer_top_03.png",
+      "PackagePath": "staticwebassets\\image\\footer_top\\images\\footer_top_03.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\khuyenmai\\khuyenmai_1.jpg",
+      "PackagePath": "staticwebassets\\image\\khuyenmai\\khuyenmai_1.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\khuyenmai\\khuyenmai_2.jpg",
+      "PackagePath": "staticwebassets\\image\\khuyenmai\\khuyenmai_2.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\khuyenmai\\khuyenmai_3.png",
+      "PackagePath": "staticwebassets\\image\\khuyenmai\\khuyenmai_3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\khuyenmai\\khuyenmai_4.png",
+      "PackagePath": "staticwebassets\\image\\khuyenmai\\khuyenmai_4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\logo.png",
+      "PackagePath": "staticwebassets\\image\\logo.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\combo\\Combo-1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\combo\\Combo-1.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\combo\\Combo-2.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\combo\\Combo-2.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\combo\\Combo-3.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\combo\\Combo-3.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\combo\\Combo-4.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\combo\\Combo-4.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\drink\\sp1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\drink\\sp1.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\drink\\sp2.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\drink\\sp2.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp1.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp2.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp2.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp3.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp3.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp4.png",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp5.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp5.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\mi_y\\sp6.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\mi_y\\sp6.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp1.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp1.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp10.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp10.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp11.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp11.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp12.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp12.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp13.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp13.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp2.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp3.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp4.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp5.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp5.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp6.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp6.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp7.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp7.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp8.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp8.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\pizza\\sp9.png",
+      "PackagePath": "staticwebassets\\image\\products\\pizza\\sp9.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\salad\\sp1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\salad\\sp1.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\salad\\sp2.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\salad\\sp2.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\salad\\sp3.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\salad\\sp3.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\suonbbq\\sp1.png",
+      "PackagePath": "staticwebassets\\image\\products\\suonbbq\\sp1.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\image\\products\\suonbbq\\sp2.png",
+      "PackagePath": "staticwebassets\\image\\products\\suonbbq\\sp2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\app.js.map",
+      "PackagePath": "staticwebassets\\js\\app.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\jquery-3.6.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.6.1.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\register.js",
+      "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\js\\store.js",
+      "PackagePath": "staticwebassets\\js\\store.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\1B548623-D0D9-44F5-BF8D-8499A5DF46AD.JPG",
+      "PackagePath": "staticwebassets\\uploads\\1B548623-D0D9-44F5-BF8D-8499A5DF46AD.JPG"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\abcxyz.jpg",
+      "PackagePath": "staticwebassets\\uploads\\abcxyz.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\haha.jpg",
+      "PackagePath": "staticwebassets\\uploads\\haha.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\hehe.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hehe.jpg"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp1.png",
+      "PackagePath": "staticwebassets\\uploads\\sp1.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp10.png",
+      "PackagePath": "staticwebassets\\uploads\\sp10.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp11.png",
+      "PackagePath": "staticwebassets\\uploads\\sp11.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp12.png",
+      "PackagePath": "staticwebassets\\uploads\\sp12.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp2.png",
+      "PackagePath": "staticwebassets\\uploads\\sp2.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp3.png",
+      "PackagePath": "staticwebassets\\uploads\\sp3.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp4.png",
+      "PackagePath": "staticwebassets\\uploads\\sp4.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp5.png",
+      "PackagePath": "staticwebassets\\uploads\\sp5.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp6.png",
+      "PackagePath": "staticwebassets\\uploads\\sp6.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp7.png",
+      "PackagePath": "staticwebassets\\uploads\\sp7.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp8.png",
+      "PackagePath": "staticwebassets\\uploads\\sp8.png"
+    },
+    {
+      "Id": "D:\\HAU\\DOTNET\\Project\\pizzaweb\\wwwroot\\uploads\\sp9.png",
+      "PackagePath": "staticwebassets\\uploads\\sp9.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.pizzaweb.props",
+      "PackagePath": "build\\pizzaweb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.pizzaweb.props",
+      "PackagePath": "buildMultiTargeting\\pizzaweb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.pizzaweb.props",
+      "PackagePath": "buildTransitive\\pizzaweb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.pizzaweb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

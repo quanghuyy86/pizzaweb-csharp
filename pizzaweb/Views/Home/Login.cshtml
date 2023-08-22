@@ -1,0 +1,51 @@
+﻿@model pizzaweb.Models.Tables.TblCustomer
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner_title">
+            <h1>Đăng nhập tài khoản</h1>
+            <div class="breadcrum">
+                <a href="Pizza">Trang chủ</a> / Đăng nhập tài khoản
+            </div>
+        </div>
+<div class="container container_login">
+    <div class="login">
+        <fieldset>
+            <legend>Đăng nhập tài khoản</legend>
+            @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
+
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password)
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                </div>
+                <div class="form-group">
+                    <p class="text-danger">
+                        @if (TempData["error"] != null)
+                        {
+                            <div>@TempData["error"]</div>
+                        }
+                        
+                    </p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Login" />
+                </div>
+            }
+        </fieldset>
+    </div>
+    <div class="forgot_password">
+        <span>Bạn quên mật khẩu? Nhập địa chỉ email của bạn để lấy lại mật khảu qua email</span> <br>
+        <label for="">Email</label> <br>
+        <input type="email" placeholder="Email" name="email" id="input_email" field-name="email">
+        <button>Lấy lại mật khẩu</button>
+    </div>
+</div>
+

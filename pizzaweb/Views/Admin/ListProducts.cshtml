@@ -1,0 +1,102 @@
+﻿@model X.PagedList.IPagedList<pizzaweb.Models.Tables.TblProduct>
+@using X.PagedList.Mvc.Core
+@using pizzaweb.Models;
+
+@{
+    ViewData["Title"] = "ListProducts";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    pizzaweb.Models.Tables.pizzawebContext db = new pizzaweb.Models.Tables.pizzawebContext();
+    
+}
+
+<h1>List of products</h1>
+
+
+
+<div class="container-fluid p-0" style="float: left; margin-bottom: -40px;">
+    
+    <form method="get" class="form-inline">
+        <input type="text" name="keyword" value="@ViewBag.keyword" placeholder="Search" class="form-control">
+        <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-danger">Seach</button>
+    </form>
+    <div>
+        <a class="btn btn-secondary" href="CreateProduct" role="button" style="float: right; margin-bottom: 10px;">Add New</a>
+    </div>
+    <div class="container-fluid p-0">
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Stt</th>
+            <th>
+                Title
+            </th>
+            <th>
+               Price
+            </th>
+            <th>
+                PricSale
+            </th>
+            <th>
+              Detail Description
+            </th>
+            <th>
+                Avatar
+            </th>
+            <th>
+                Category
+            </th>
+            <th>Edit/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+            @{
+                int stt = 1;
+            }
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @stt
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @item.Price.ToString("#,# đ")
+            </td>
+            <td>
+                @item.PriceSale?.ToString("#,# đ")
+            </td>
+            <td>
+                @Html.Raw(item.DetailDescription)
+         
+            </td>
+            <td>
+                <img src="@item.Avatar" style="height: 100px; width: 100px" />
+            </td>
+                @{
+                  var loai = db.TblCategories.Find(item.CategoryId);
+                  if (loai is not null)
+                     {
+                         <td><span>@loai.Name</span></td>
+                     }
+                  else
+                     {
+                         <td></td>
+                     }
+                }
+            <td>
+                <a class="btn btn-secondary" asp-action="EditProduct" asp-route-id="@item.Id">Edit</a> 
+                <a class="btn btn btn-danger" asp-action="DeleteProduct" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+        stt++;
+        }
+    </tbody>
+</table>
+<div>
+            @Html.PagedListPager(Model, page=>Url.Action("listproducts", "Admin", new {page=page}))
+            
+</div>
+</div>
+</div>

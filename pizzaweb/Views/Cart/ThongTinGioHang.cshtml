@@ -1,0 +1,32 @@
+﻿@model IEnumerable<pizzaweb.Models.ShopingCartItem>
+
+@if (Model != null && Model.Any())
+{
+
+    <h2 style="font-size: 32px;">Giỏ hàng</h2>
+    var i = 1;
+    var tongtien = decimal.Zero;
+    <table class="table">
+        <tr>
+            <th>Stt</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá tiền</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            tongtien += item.TotalPrice;
+            <tr>
+                <th>@i</th>
+                <td>@item.ProductName</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price.ToString("#,# đ")</td>
+            </tr>
+            i++;
+        }
+        <tr>
+            <th colspan="3">Tổng tiền:</th>
+            <td>@tongtien.ToString("#,# đ")</td>
+        </tr>
+    </table>
+}

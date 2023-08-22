@@ -1,0 +1,61 @@
+﻿@model IEnumerable<pizzaweb.Models.ShopingCartItem>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner_title">
+    <h1>Giỏ hàng của bạn</h1>
+    <div class="breadcrum">
+        <a href="/home/pizza">Trang chủ</a> / Giỏ hàng của bạn
+    </div>
+</div>
+<div class="list_product container" id="load_data">
+    @if (Model != null && Model.Any())
+    {
+        var i = 0;
+        var tongtien = decimal.Zero;
+        @foreach (var item in Model)
+        {
+            tongtien += item.TotalPrice;
+            <div class="row" id="trow_@item.ProductId">
+                <div class="product_info">
+                    <a href="">
+                        <img width="100%" src="@item.ProductImg" />
+                    </a>
+                    <div class="desc">
+                        <h2>
+                            <a href="#">@item.ProductName</a>
+                        </h2>
+                        <div class="brand">Thương hiệu: Pizza Express</div>
+                        <div class="origin">Xuất xứ: VietNam</div>
+                        <div class="price">@item.Price.ToString("#,# đ")</div>
+                    </div>
+                </div>
+                <div class="action">
+                    <div class="slg_sp">
+                        <input type="number" id="Quantity_@item.ProductId" value="@item.Quantity" class="input_slg" />
+                    </div>
+                    <div class="total_1_sp">
+                        @item.TotalPrice.ToString("#,# đ")
+                    </div>
+                    <a href="#" data-id="@item.ProductId" class="btnUpdate">Cập nhật</a>
+                    <a href="#" data-id="@item.ProductId" class="btnDelete">Xóa</a>
+                </div>
+            </div>
+        }
+        <div class="total_price container">
+            <span>Tổng tiền: </span> <strong id="totalPrice">@tongtien.ToString("#,# đ")</strong>
+        </div>
+        <div class="total_price container">
+           <a href="/cart/checkout">Thanh Toán</a>
+        </div>
+    }
+    else
+    {
+        <h2>Không có sản phẩm nào trong giỏ hàng</h2>
+    }
+
+</div>
+
+
